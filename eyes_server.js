@@ -1,0 +1,1 @@
+Eyes=EyesBase.inspector({maxLength:-1,functions: false});
