@@ -1,8 +1,8 @@
 Package.describe({
   name: 'jorisroling:eyes',
-  version: '0.0.2',
+  version: '0.0.6',
   // Brief, one-line summary of the package.
-  summary: '<i class="fa fa-eye"></i>',
+  summary: 'Meteor implementation of (eyes)[https://github.com/cloudhead/eyes.js]',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/jorisroling/meteor-eyes',
   // By default, Meteor will default to using README.md for documentation.
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
   api.addFiles('eyes_server.js', 'server');
   api.addFiles('eyes_client.js', 'client');
   api.use(['templating', 'spacebars', 'ui'], 'client');
-  api.export('Eyes');
+  api.export('eyes');
 });
 
 Package.onTest(function(api) {

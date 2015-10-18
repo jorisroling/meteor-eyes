@@ -11,8 +11,8 @@
 //       var eyes = require('eyes');
 //       eyes.inspect(something); // inspect with the default settings
 //
-EyesBase={};
-var eyes = EyesBase,
+eyesBase={};
+var eyes = eyesBase,
     stack = [];
 
 eyes.defaults = {
@@ -52,7 +52,7 @@ eyes.inspector = function (options) {
         var myopts=merge(options || {}, opts || {});
         var result=that.inspect.call(that, obj, label, myopts);
         if (myopts.html && !myopts.stream) {
-            return '<pre class="eyes" style="padding:8px;background-color:black;color:white;font-size:8px;'+((myopts && myopts.styles && myopts.styles.all)?('color:'+myopts.styles.all+';'):'')+'">'+result+'</pre>';
+            return '<pre class="eyes" style="padding:8px;background-color:black;color:white;font-size:8px;max-width:320px;'+((myopts && myopts.styles && myopts.styles.all)?('color:'+myopts.styles.all+';'):'')+'">'+result+'</pre>';
         } else {
             return result;
         }
