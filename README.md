@@ -1,4 +1,4 @@
-Meteor implementation of (eyes)[https://github.com/cloudhead/eyes.js]
+Meteor implementation of [eyes](https://github.com/cloudhead/eyes.js)
 
 Implements **eyes(anything)** on server and client.
 
