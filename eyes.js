@@ -36,7 +36,8 @@ eyes.defaults = {
     maxLength: 2048,           // Truncate output if longer
     colors: true,
     html: false,
-	json: false,
+	style:'text-align:left;padding:8px;background-color:black;color:white;font-size:8px;max-width:320px;',
+	json: true,
 	escape: true,
 	functions: false
 };
@@ -52,7 +53,7 @@ eyes.inspector = function (options) {
         var myopts=merge(options || {}, opts || {});
         var result=that.inspect.call(that, obj, label, myopts);
         if (myopts.html && !myopts.stream) {
-            return '<pre class="eyes" style="text-align:left;padding:8px;background-color:black;color:white;font-size:8px;max-width:320px;'+((myopts && myopts.styles && myopts.styles.all)?('color:'+myopts.styles.all+';'):'')+'">'+result+'</pre>';
+            return '<pre class="eyes" style="'+myopts.style+((myopts && myopts.styles && myopts.styles.all)?('color:'+myopts.styles.all+';'):'')+'">'+result+'</pre>';
         } else {
             return result;
         }

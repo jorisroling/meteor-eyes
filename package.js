@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jorisroling:eyes',
-  version: '0.0.7',
+  version: '0.0.15',
   // Brief, one-line summary of the package.
   summary: 'Meteor implementation of (eyes)[https://github.com/cloudhead/eyes.js]',
   // URL to the Git repository containing the source code for this package.
