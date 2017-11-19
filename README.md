@@ -1,4 +1,9 @@
-Meteor implementation of [eyes](https://github.com/cloudhead/eyes.js)
+#THIS PACKAGE WILL BE DISCONTINUED!
+==================================
+
+## Please move to the newer (better!) YVES [github](https://github.com/jorisroling/yves) or [atmosphere](https://atmospherejs.com/jorisroling/yves)
+
+This was (!) a Meteor implementation of [eyes](https://github.com/cloudhead/eyes.js)
 
 Implements **eyes(anything)** on server and client.
 
